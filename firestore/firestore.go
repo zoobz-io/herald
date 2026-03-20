@@ -6,7 +6,7 @@ import (
 	"context"
 
 	"cloud.google.com/go/firestore"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // Provider implements herald.Provider for Firestore.

@@ -8,7 +8,7 @@ import (
 	"github.com/nats-io/nats-server/v2/server"
 	"github.com/nats-io/nats.go"
 	"github.com/nats-io/nats.go/jetstream"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 func startTestServer(t *testing.T) (*server.Server, *nats.Conn, jetstream.JetStream) {

@@ -1,11 +1,11 @@
 # herald/redis
 
-Redis Streams provider for [herald](https://github.com/zoobzio/herald).
+Redis Streams provider for [herald](https://github.com/zoobz-io/herald).
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/redis
+go get github.com/zoobz-io/herald/redis
 ```
 
 ## Usage
@@ -17,9 +17,9 @@ import (
     "context"
 
     "github.com/redis/go-redis/v9"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldredis "github.com/zoobzio/herald/redis"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldredis "github.com/zoobz-io/herald/redis"
 )
 
 type Order struct {

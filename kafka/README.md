@@ -1,11 +1,11 @@
 # herald/kafka
 
-Kafka provider for [herald](https://github.com/zoobzio/herald).
+Kafka provider for [herald](https://github.com/zoobz-io/herald).
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/kafka
+go get github.com/zoobz-io/herald/kafka
 ```
 
 ## Usage
@@ -17,9 +17,9 @@ import (
     "context"
 
     kafkago "github.com/segmentio/kafka-go"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    "github.com/zoobzio/herald/kafka"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    "github.com/zoobz-io/herald/kafka"
 )
 
 type Order struct {

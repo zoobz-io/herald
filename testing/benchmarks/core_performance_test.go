@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zoobzio/capitan"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/capitan"
+	"github.com/zoobz-io/herald"
 )
 
 type benchMessage struct {

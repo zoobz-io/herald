@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	amqp "github.com/rabbitmq/amqp091-go"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // Provider implements herald.Provider for RabbitMQ.

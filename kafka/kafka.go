@@ -5,7 +5,7 @@ import (
 	"context"
 
 	"github.com/segmentio/kafka-go"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // Writer defines the interface for Kafka message production.

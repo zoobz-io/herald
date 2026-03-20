@@ -5,7 +5,7 @@ import (
 	"context"
 
 	"github.com/redis/go-redis/v9"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // Provider implements herald.Provider for Redis Streams.

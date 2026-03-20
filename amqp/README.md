@@ -1,11 +1,11 @@
 # herald/amqp
 
-RabbitMQ (AMQP 0-9-1) provider for [herald](https://github.com/zoobzio/herald).
+RabbitMQ (AMQP 0-9-1) provider for [herald](https://github.com/zoobz-io/herald).
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/amqp
+go get github.com/zoobz-io/herald/amqp
 ```
 
 ## Usage
@@ -18,9 +18,9 @@ import (
     "log"
 
     amqp "github.com/rabbitmq/amqp091-go"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldamqp "github.com/zoobzio/herald/amqp"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldamqp "github.com/zoobz-io/herald/amqp"
 )
 
 type Order struct {

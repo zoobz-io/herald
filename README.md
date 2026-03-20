@@ -1,17 +1,17 @@
 # herald
 
-[![CI Status](https://github.com/zoobzio/herald/workflows/CI/badge.svg)](https://github.com/zoobzio/herald/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/zoobzio/herald/graph/badge.svg?branch=main)](https://codecov.io/gh/zoobzio/herald)
-[![Go Report Card](https://goreportcard.com/badge/github.com/zoobzio/herald)](https://goreportcard.com/report/github.com/zoobzio/herald)
-[![CodeQL](https://github.com/zoobzio/herald/workflows/CodeQL/badge.svg)](https://github.com/zoobzio/herald/security/code-scanning)
-[![Go Reference](https://pkg.go.dev/badge/github.com/zoobzio/herald.svg)](https://pkg.go.dev/github.com/zoobzio/herald)
-[![License](https://img.shields.io/github/license/zoobzio/herald)](LICENSE)
-[![Go Version](https://img.shields.io/github/go-mod/go-version/zoobzio/herald)](go.mod)
-[![Release](https://img.shields.io/github/v/release/zoobzio/herald)](https://github.com/zoobzio/herald/releases)
+[![CI Status](https://github.com/zoobz-io/herald/workflows/CI/badge.svg)](https://github.com/zoobz-io/herald/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/zoobz-io/herald/graph/badge.svg?branch=main)](https://codecov.io/gh/zoobz-io/herald)
+[![Go Report Card](https://goreportcard.com/badge/github.com/zoobz-io/herald)](https://goreportcard.com/report/github.com/zoobz-io/herald)
+[![CodeQL](https://github.com/zoobz-io/herald/workflows/CodeQL/badge.svg)](https://github.com/zoobz-io/herald/security/code-scanning)
+[![Go Reference](https://pkg.go.dev/badge/github.com/zoobz-io/herald.svg)](https://pkg.go.dev/github.com/zoobz-io/herald)
+[![License](https://img.shields.io/github/license/zoobz-io/herald)](LICENSE)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/zoobz-io/herald)](go.mod)
+[![Release](https://img.shields.io/github/v/release/zoobz-io/herald)](https://github.com/zoobz-io/herald/releases)
 
-Bidirectional bindings between [capitan](https://github.com/zoobzio/capitan) events and message brokers.
+Bidirectional bindings between [capitan](https://github.com/zoobz-io/capitan) events and message brokers.
 
-Emit a [capitan](https://github.com/zoobzio/capitan) event, herald publishes it. Herald receives a message, capitan emits it. Same types, same signals, automatic serialization.
+Emit a [capitan](https://github.com/zoobz-io/capitan) event, herald publishes it. Herald receives a message, capitan emits it. Same types, same signals, automatic serialization.
 
 ## Bidirectional Event Distribution
 
@@ -30,7 +30,7 @@ One provider, one signal, one key. Herald handles serialization, acknowledgment,
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald
+go get github.com/zoobz-io/herald
 ```
 
 Requires Go 1.23+.
@@ -45,9 +45,9 @@ import (
     "fmt"
 
     kafkago "github.com/segmentio/kafka-go"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    "github.com/zoobzio/herald/kafka"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    "github.com/zoobz-io/herald/kafka"
 )
 
 type Order struct {
@@ -103,10 +103,10 @@ func main() {
 | Type-Safe Generics   | Compile-time checked publishers and subscribers                                                     | [Overview](docs/1.overview.md)                                                           |
 | 11 Providers         | Kafka, NATS, JetStream, Pub/Sub, Redis, SQS, AMQP, SNS, Bolt, Firestore, io                         | [Providers](docs/2.learn/3.providers.md)                                                 |
 | Pipeline Middleware  | Validation, transformation, and side effects via processors                                         | [Reliability](docs/3.guides/1.reliability.md)                                            |
-| Reliability Patterns | Retry, backoff, timeout, circuit breaker, rate limiting via [pipz](https://github.com/zoobzio/pipz) | [Reliability](docs/3.guides/1.reliability.md)                                            |
+| Reliability Patterns | Retry, backoff, timeout, circuit breaker, rate limiting via [pipz](https://github.com/zoobz-io/pipz) | [Reliability](docs/3.guides/1.reliability.md)                                            |
 | Auto Acknowledgment  | Messages acked/nacked based on processing outcome                                                   | [Subscribing](docs/2.learn/2.subscribing.md)                                             |
 | Custom Codecs        | Pluggable serialization (JSON default, custom supported)                                            | [Codecs](docs/3.guides/2.codecs.md)                                                      |
-| Error Observability  | All errors emit as [capitan](https://github.com/zoobzio/capitan) events                             | [Error Handling](docs/3.guides/3.errors.md)                                              |
+| Error Observability  | All errors emit as [capitan](https://github.com/zoobz-io/capitan) events                             | [Error Handling](docs/3.guides/3.errors.md)                                              |
 
 ## Why herald?
 
@@ -114,13 +114,13 @@ func main() {
 - **Bidirectional** — Publish to brokers or subscribe from brokers
 - **11 providers** — Kafka, NATS, JetStream, Pub/Sub, Redis, SQS, RabbitMQ, SNS, BoltDB, Firestore, io
 - **Reliable** — Pipeline middleware for retry, backoff, timeout, circuit breaker, rate limiting
-- **Observable** — Errors flow through [capitan](https://github.com/zoobzio/capitan)
+- **Observable** — Errors flow through [capitan](https://github.com/zoobz-io/capitan)
 
 ## Unified Event Flow
 
 Herald enables a pattern: **internal events become external messages, external messages become internal events**.
 
-Your application emits [capitan](https://github.com/zoobzio/capitan) events as usual. Herald publishes them to any broker. Other services publish to brokers. Herald subscribes and emits them as capitan events. Same signals, same keys, same hooks — the boundary between internal and external disappears.
+Your application emits [capitan](https://github.com/zoobz-io/capitan) events as usual. Herald publishes them to any broker. Other services publish to brokers. Herald subscribes and emits them as capitan events. Same signals, same keys, same hooks — the boundary between internal and external disappears.
 
 ```go
 // Service A: emit locally, publish externally
@@ -179,7 +179,7 @@ pub := herald.NewPublisher(provider, signal, key, []herald.Option[Order]{
 
 ## Pipeline Options
 
-Add reliability features via [pipz](https://github.com/zoobzio/pipz):
+Add reliability features via [pipz](https://github.com/zoobz-io/pipz):
 
 ```go
 pub := herald.NewPublisher(provider, signal, key, []herald.Option[Order]{

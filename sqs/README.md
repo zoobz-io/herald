@@ -1,11 +1,11 @@
 # herald/sqs
 
-AWS SQS provider for [herald](https://github.com/zoobzio/herald).
+AWS SQS provider for [herald](https://github.com/zoobz-io/herald).
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/sqs
+go get github.com/zoobz-io/herald/sqs
 ```
 
 ## Usage
@@ -19,9 +19,9 @@ import (
 
     "github.com/aws/aws-sdk-go-v2/config"
     "github.com/aws/aws-sdk-go-v2/service/sqs"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldsqs "github.com/zoobzio/herald/sqs"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldsqs "github.com/zoobz-io/herald/sqs"
 )
 
 type Order struct {

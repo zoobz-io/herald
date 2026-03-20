@@ -8,7 +8,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // Provider implements herald.Provider for io.Reader/io.Writer.

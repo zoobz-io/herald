@@ -7,7 +7,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 	"go.etcd.io/bbolt"
 )
 

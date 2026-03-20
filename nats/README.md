@@ -1,11 +1,11 @@
 # herald/nats
 
-NATS provider for [herald](https://github.com/zoobzio/herald).
+NATS provider for [herald](https://github.com/zoobz-io/herald).
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/nats
+go get github.com/zoobz-io/herald/nats
 ```
 
 ## Usage
@@ -18,9 +18,9 @@ import (
     "log"
 
     "github.com/nats-io/nats.go"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldnats "github.com/zoobzio/herald/nats"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldnats "github.com/zoobz-io/herald/nats"
 )
 
 type Order struct {

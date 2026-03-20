@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 func TestMockProvider_Publish(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 
 	"github.com/nats-io/nats.go"
 	"github.com/nats-io/nats.go/jetstream"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // Provider implements herald.Provider for NATS JetStream.

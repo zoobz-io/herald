@@ -5,7 +5,7 @@ import (
 	"context"
 
 	"cloud.google.com/go/pubsub"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // Provider implements herald.Provider for Google Cloud Pub/Sub.
