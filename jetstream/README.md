@@ -1,13 +1,13 @@
 # herald/jetstream
 
-JetStream provider for [herald](https://github.com/zoobzio/herald).
+JetStream provider for [herald](https://github.com/zoobz-io/herald).
 
 JetStream is NATS' persistence layer, providing at-least-once delivery, message replay, and header support. Use this provider when you need persistence and metadata support beyond NATS core.
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/jetstream
+go get github.com/zoobz-io/herald/jetstream
 ```
 
 ## Usage
@@ -20,9 +20,9 @@ import (
 
     "github.com/nats-io/nats.go"
     "github.com/nats-io/nats.go/jetstream"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    herald_js "github.com/zoobzio/herald/jetstream"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    herald_js "github.com/zoobz-io/herald/jetstream"
 )
 
 type Order struct {

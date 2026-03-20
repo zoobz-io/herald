@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zoobzio/capitan"
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/capitan"
+	"github.com/zoobz-io/herald"
 )
 
 // newTestMessage creates a Message with no-op ack/nack for testing.

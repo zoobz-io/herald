@@ -15,7 +15,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/zoobzio/capitan"
+	"github.com/zoobz-io/capitan"
 )
 
 // Sentinel errors for provider misconfiguration.

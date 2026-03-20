@@ -1,13 +1,13 @@
 # herald/io
 
-io.Reader/io.Writer provider for [herald](https://github.com/zoobzio/herald).
+io.Reader/io.Writer provider for [herald](https://github.com/zoobz-io/herald).
 
 Useful for testing, CLI piping, and file-based messaging.
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/io
+go get github.com/zoobz-io/herald/io
 ```
 
 ## Usage
@@ -22,9 +22,9 @@ import (
     "context"
     "testing"
 
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldio "github.com/zoobzio/herald/io"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldio "github.com/zoobz-io/herald/io"
 )
 
 type Order struct {
@@ -64,9 +64,9 @@ import (
     "context"
     "os"
 
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldio "github.com/zoobzio/herald/io"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldio "github.com/zoobz-io/herald/io"
 )
 
 type Line struct {

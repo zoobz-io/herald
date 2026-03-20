@@ -1,4 +1,4 @@
-module github.com/zoobzio/herald/sqs
+module github.com/zoobz-io/herald/sqs
 
 go 1.24.0
 
@@ -9,7 +9,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/sqs v1.37.0
 	github.com/testcontainers/testcontainers-go v0.40.0
 	github.com/testcontainers/testcontainers-go/modules/localstack v0.40.0
-	github.com/zoobzio/herald v0.0.0-00010101000000-000000000000
+	github.com/zoobz-io/herald v0.0.0-00010101000000-000000000000
 )
 
 require (
@@ -67,9 +67,9 @@ require (
 	github.com/tklauser/go-sysconf v0.3.13 // indirect
 	github.com/tklauser/numcpus v0.7.0 // indirect
 	github.com/yusufpapurcu/wmi v1.2.4 // indirect
-	github.com/zoobzio/capitan v1.0.0 // indirect
-	github.com/zoobzio/clockz v1.0.0 // indirect
-	github.com/zoobzio/pipz v1.0.4 // indirect
+	github.com/zoobz-io/capitan v1.0.2 // indirect
+	github.com/zoobz-io/clockz v1.0.2 // indirect
+	github.com/zoobz-io/pipz v1.0.5 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.54.0 // indirect
 	go.opentelemetry.io/otel v1.37.0 // indirect
@@ -85,4 +85,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/zoobzio/herald => ../
+replace github.com/zoobz-io/herald => ../

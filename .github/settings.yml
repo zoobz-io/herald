@@ -1,14 +1,22 @@
 repository:
   name: herald
   description: Bidirectional bindings between capitan events and message brokers
-  homepage: https://github.com/zoobzio/herald
-  has_wiki: true
+  homepage: https://herald.zoobz.io
+  has_wiki: false
   has_downloads: true
   default_branch: main
   allow_squash_merge: true
   allow_merge_commit: false
   allow_rebase_merge: false
   delete_branch_on_merge: true
+
+labels:
+  - name: bug
+    color: d73a4a
+  - name: enhancement
+    color: a2eeef
+  - name: documentation
+    color: 0075ca
 
 branches:
   - name: main

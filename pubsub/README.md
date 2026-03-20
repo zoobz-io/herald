@@ -1,11 +1,11 @@
 # herald/pubsub
 
-Google Cloud Pub/Sub provider for [herald](https://github.com/zoobzio/herald).
+Google Cloud Pub/Sub provider for [herald](https://github.com/zoobz-io/herald).
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/pubsub
+go get github.com/zoobz-io/herald/pubsub
 ```
 
 ## Usage
@@ -18,9 +18,9 @@ import (
     "log"
 
     "cloud.google.com/go/pubsub"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldpubsub "github.com/zoobzio/herald/pubsub"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldpubsub "github.com/zoobz-io/herald/pubsub"
 )
 
 type Order struct {

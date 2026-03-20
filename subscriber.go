@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
-	"github.com/zoobzio/capitan"
-	"github.com/zoobzio/pipz"
+	"github.com/zoobz-io/capitan"
+	"github.com/zoobz-io/pipz"
 )
 
 // Internal identities for subscriber.

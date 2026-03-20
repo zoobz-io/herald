@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zoobzio/herald"
+	"github.com/zoobz-io/herald"
 )
 
 // MockProvider is a test provider for verifying publish/subscribe behavior.

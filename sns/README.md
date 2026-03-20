@@ -1,13 +1,13 @@
 # herald/sns
 
-AWS SNS provider for [herald](https://github.com/zoobzio/herald).
+AWS SNS provider for [herald](https://github.com/zoobz-io/herald).
 
 **Note:** SNS is publish-only. Use [SQS](../sqs) with an SNS subscription for consuming messages.
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/sns
+go get github.com/zoobz-io/herald/sns
 ```
 
 ## Usage
@@ -21,9 +21,9 @@ import (
 
     "github.com/aws/aws-sdk-go-v2/config"
     "github.com/aws/aws-sdk-go-v2/service/sns"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldsns "github.com/zoobzio/herald/sns"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldsns "github.com/zoobz-io/herald/sns"
 )
 
 type Order struct {

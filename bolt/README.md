@@ -1,13 +1,13 @@
 # herald/bolt
 
-BoltDB (bbolt) provider for [herald](https://github.com/zoobzio/herald).
+BoltDB (bbolt) provider for [herald](https://github.com/zoobz-io/herald).
 
 Embedded key-value store for local message queues without external dependencies.
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/bolt
+go get github.com/zoobz-io/herald/bolt
 ```
 
 ## Usage
@@ -20,9 +20,9 @@ import (
     "log"
 
     "go.etcd.io/bbolt"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldbolt "github.com/zoobzio/herald/bolt"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldbolt "github.com/zoobz-io/herald/bolt"
 )
 
 type Order struct {

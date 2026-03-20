@@ -1,13 +1,13 @@
 # herald/firestore
 
-Google Cloud Firestore provider for [herald](https://github.com/zoobzio/herald).
+Google Cloud Firestore provider for [herald](https://github.com/zoobz-io/herald).
 
 Uses Firestore collections as message queues with real-time document watching.
 
 ## Installation
 
 ```bash
-go get github.com/zoobzio/herald/firestore
+go get github.com/zoobz-io/herald/firestore
 ```
 
 ## Usage
@@ -20,9 +20,9 @@ import (
     "log"
 
     "cloud.google.com/go/firestore"
-    "github.com/zoobzio/capitan"
-    "github.com/zoobzio/herald"
-    heraldfirestore "github.com/zoobzio/herald/firestore"
+    "github.com/zoobz-io/capitan"
+    "github.com/zoobz-io/herald"
+    heraldfirestore "github.com/zoobz-io/herald/firestore"
 )
 
 type Order struct {
