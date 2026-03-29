@@ -2,6 +2,7 @@ package redis
 
 import (
 	"context"
+	"errors"
 
 	"github.com/redis/go-redis/v9"
 	"github.com/zoobz-io/herald"
@@ -104,11 +105,12 @@ func (p *PubSubProvider) Ping(ctx context.Context) error {
 
 // Close releases Redis Pub/Sub resources.
 func (p *PubSubProvider) Close() error {
+	var subErr error
 	if p.sub != nil {
-		_ = p.sub.Close()
+		subErr = p.sub.Close()
 	}
 	if p.client != nil {
-		return p.client.Close()
+		return errors.Join(subErr, p.client.Close())
 	}
-	return nil
+	return subErr
 }
